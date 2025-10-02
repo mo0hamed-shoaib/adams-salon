@@ -49,7 +49,6 @@
     "start": "next start",
     "lint": "eslint",
     "prepublishOnly": "echo 'Skipping build for starter template'",
-    "postinstall": "node scripts/postinstall.js",
     "publish:starter": "bash scripts/publish.sh"
   },
   "dependencies": {
