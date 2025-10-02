@@ -162,7 +162,7 @@ export function LocationSection({ address, mapsUrl }: LocationSectionProps) {
                 <CardContent className="space-y-4 flex-1 flex flex-col justify-between">
                   <div className="space-y-4">
                     <div>
-                      <h3 className="font-semibold mb-2">Adam's Salon</h3>
+                      <h3 className="font-semibold mb-2">Adam&apos;s Salon</h3>
                       <p className="text-muted-foreground">
                         {address[locale as "ar" | "en"]}
                       </p>
