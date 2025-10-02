@@ -219,6 +219,7 @@ export function LocationSection({ address, mapsUrl }: LocationSectionProps) {
 
           </div>
         </div>
+        <p>We&apos;re located at ...</p>
         </div>
       </div>
     </section>
