@@ -100,8 +100,39 @@ export function LocationSection({ address, mapsUrl }: LocationSectionProps) {
   };
   
   const handleDirectionsClick = () => {
-    const encodedAddress = encodeURIComponent(address[locale as 'ar' | 'en']);
-    const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`;
+    // Try to extract coordinates from the mapsUrl first
+    const extractCoordinatesFromUrl = (url: string) => {
+      // Look for latitude and longitude patterns in various formats
+      const patterns = [
+        // Pattern for embedded maps: !3d<lat>!4d<lng>
+        /!3d(-?\d+\.?\d*)!4d(-?\d+\.?\d*)/,
+        // Pattern for regular maps: @<lat>,<lng>
+        /@(-?\d+\.?\d*),(-?\d+\.?\d*)/,
+        // Pattern for query params: ?q=<lat>,<lng>
+        /[?&]q=(-?\d+\.?\d*),(-?\d+\.?\d*)/
+      ];
+      
+      for (const pattern of patterns) {
+        const match = url.match(pattern);
+        if (match) {
+          return { lat: match[1], lng: match[2] };
+        }
+      }
+      return null;
+    };
+
+    const coords = extractCoordinatesFromUrl(mapsUrl);
+    
+    let directionsUrl;
+    if (coords) {
+      // Use coordinates for more accurate directions
+      directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${coords.lat},${coords.lng}`;
+    } else {
+      // Fallback to address if coordinates not found
+      const encodedAddress = encodeURIComponent(address[locale as 'ar' | 'en']);
+      directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`;
+    }
+    
     window.open(directionsUrl, '_blank');
   };
 
