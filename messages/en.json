@@ -1,0 +1,132 @@
+{
+  "navigation": {
+    "dashboard": "Dashboard"
+  },
+  "hero": {
+    "open": "Open",
+    "closed": "Closed",
+    "inShop": "In Shop",
+    "coming": "Coming",
+    "minWait": "Min Wait"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Ready for your next haircut? Contact us to book an appointment or ask any questions.",
+    "whatsapp": "WhatsApp",
+    "whatsappDescription": "Send us a message on WhatsApp for quick booking and inquiries.",
+    "chatWhatsapp": "Chat on WhatsApp",
+    "callUs": "Call Us",
+    "callDescription": "Give us a call to speak directly with our team and book your appointment.",
+    "callNow": "Call Now",
+    "walkIns": "Walk-ins Welcome",
+    "walkInsDescription": "While we recommend booking ahead, we also welcome walk-in customers.",
+    "weAreOpen": "We Are Open",
+    "currentlyClosed": "Currently Closed"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Professional grooming services tailored to your needs. From classic cuts to modern styles, we provide the perfect look for every gentleman."
+  },
+  "location": {
+    "title": "Find Us",
+    "subtitle": "Visit us at our convenient downtown location. We're easy to find and have plenty of parking available.",
+    "ourLocation": "Our Location",
+    "mondayFriday": "Monday - Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "closed": "Closed",
+    "getDirections": "Open in Google Maps"
+  },
+  "testimonials": {
+    "title": "What Our Customers Say",
+    "subtitle": "Don't just take our word for it. Here's what our satisfied customers have to say about their experience at Adam's Salon.",
+    "verifiedCustomer": "Verified Customer",
+    "ctaTitle": "Ready to Experience the Difference?",
+    "ctaDescription": "Join hundreds of satisfied customers who trust Adam's Salon for their grooming needs. Book your appointment today and see why we're the best in town.",
+    "bookWhatsapp": "Book on WhatsApp",
+    "callToBook": "Call to Book"
+  },
+  "footer": {
+    "copyright": "© 2025 Adam's Salon. All rights reserved.",
+    "tagline": "Professional grooming services since 2020"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error Loading Data",
+    "refresh": "Please try refreshing the page."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Manage Adam's Salon",
+    "login": {
+      "title": "Login to Dashboard",
+      "password": "Password",
+      "login": "Login",
+      "error": "Invalid password"
+    },
+    "tabs": {
+      "status": "Status",
+      "hours": "Working Hours",
+      "services": "Services",
+      "testimonials": "Testimonials",
+      "location": "Location"
+    },
+    "status": {
+      "title": "Shop Status",
+      "isOpen": "Shop Open",
+      "manualOverride": "Manual Override",
+      "open": "Open",
+      "closed": "Closed",
+      "clientsInShop": "Clients in Shop",
+      "clientsComing": "Clients Coming",
+      "waitingTime": "Waiting Time (minutes)"
+    },
+    "hours": {
+      "title": "Working Hours",
+      "day": "Day",
+      "open": "Open",
+      "openTime": "Open Time",
+      "closeTime": "Close Time",
+      "days": {
+        "Monday": "Monday",
+        "Tuesday": "Tuesday",
+        "Wednesday": "Wednesday",
+        "Thursday": "Thursday",
+        "Friday": "Friday",
+        "Saturday": "Saturday",
+        "Sunday": "Sunday"
+      }
+    },
+    "services": {
+      "title": "Manage Services",
+      "addService": "Add Service",
+      "name": "Service Name",
+      "price": "Price",
+      "description": "Description",
+      "image": "Service Image",
+      "delete": "Delete",
+      "descriptionPlaceholder": "Service description"
+    },
+    "testimonials": {
+      "title": "Manage Testimonials",
+      "addTestimonial": "Add Testimonial",
+      "name": "Customer Name",
+      "rating": "Rating",
+      "comment": "Comment",
+      "avatar": "Customer Avatar",
+      "delete": "Delete",
+      "commentPlaceholder": "Customer review"
+    },
+    "location": {
+      "title": "Location Information",
+      "address": "Address",
+      "mapsUrl": "Google Maps URL",
+      "addressPlaceholder": "Shop address",
+      "mapsPlaceholder": "Any Google Maps URL (short links work too)"
+    },
+    "actions": {
+      "save": "Save",
+      "logout": "Logout"
+    }
+  }
+}
