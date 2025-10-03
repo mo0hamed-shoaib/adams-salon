@@ -61,11 +61,6 @@ export function ServicesSection({ services }: ServicesSectionProps) {
               </Card>
             ))}
           </div>
-
-          <p>
-            We&apos;re committed to delivering reliable, high-quality services
-            that meet your expectations.
-          </p>
         </div>
       </div>
     </section>
