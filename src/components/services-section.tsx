@@ -1,8 +1,7 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+
 import Image from "next/image";
 import { Service } from "@/lib/types";
 import { useTranslations, useLocale } from "next-intl";
@@ -35,7 +34,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
                 <div className="relative w-full aspect-[16/10]">
                   <Image
                     src={service.image}
-                    alt={service.name}
+                    alt={service.name[locale as "ar" | "en"]}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
