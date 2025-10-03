@@ -39,7 +39,7 @@ export function LocationSection({ address, mapsUrl }: LocationSectionProps) {
         urlObj.pathname.includes("/maps/")
       ) {
         // Extract coordinates from the URL
-        const coordsMatch = url.pathname.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/);
+        const coordsMatch = urlObj.pathname.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/);
 
         if (coordsMatch) {
           const [, lat, lng] = coordsMatch;
@@ -48,7 +48,7 @@ export function LocationSection({ address, mapsUrl }: LocationSectionProps) {
         }
 
         // Try to extract place ID
-        const placeIdMatch = url.pathname.match(/place\/([^\/\?]+)/);
+        const placeIdMatch = urlObj.pathname.match(/place\/([^\/\?]+)/);
         if (placeIdMatch) {
           const placeId = placeIdMatch[1];
           // Create embed URL with place ID
@@ -210,14 +210,11 @@ export function LocationSection({ address, mapsUrl }: LocationSectionProps) {
                 <div className="relative w-full h-96">
                   <iframe
                     src={getEmbedUrl(mapsUrl)}
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     title="Adam's Salon Location"
-                    className="absolute inset-0 w-full h-full"
+                    className="absolute inset-0 w-full h-full border-0"
                   />
                 </div>
               </Card>
