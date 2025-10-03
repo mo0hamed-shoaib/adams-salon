@@ -7,6 +7,9 @@ export default createMiddleware({
   // Used when no locale matches
   defaultLocale: 'ar',
   
+  // Disable browser language detection to always prefer defaultLocale when no prefix
+  localeDetection: false,
+  
   // Always show locale prefix
   localePrefix: 'always'
 });
